@@ -1,0 +1,292 @@
+/* This is for the zoomable circle packing */
+
+.node {
+    cursor: pointer;
+}
+
+.node:hover {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.node--leaf {
+    fill: white;
+}
+
+.label {
+    font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+    pointer-events: none;
+}
+
+/* this is for the page */
+
+#nav {
+    background-color: #68208a
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-dark {
+    background-color: #68208a!important;
+}
+
+body nav {
+    box-shadow: 0 2px 5px #413C69 ;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.padding {
+    padding: 15px;
+    
+}
+
+#para-1 {
+    margin-top: 20px;
+}
+
+.main-page {
+    color:#929292da;
+    background-color: #912ec0;
+    height:600px;
+    padding-top : 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.brand {
+    color:white;
+    padding-top:10px
+}
+
+.brand h1{
+    font-size: 70px
+}
+
+.image img{
+    position:absolute;
+    top: 100px;
+    width: 450px;
+    height: 450px;
+    left: 10%;
+    opacity:0.2;    
+}
+
+#header {
+    position:absolute;
+    z-index:1;
+    left: 50%;
+    text-align: center;
+}
+
+.lorem {
+    background-color: #533A7B;
+    position:absolute;
+    z-index: 1;
+    border-radius: 15px;
+    top: 230px;
+    width: 800px;
+    left: 29%;
+    padding: 15px;
+    color: #ffffffaa;
+    box-shadow: 1px 1px 10px #00000080;
+}
+
+.subtext h5 {
+    color: #ffffffc0
+}
+
+.after-main {
+    height: 100px;
+}
+
+
+/* zoomable packing section */
+
+.zoomable-packing h1 {
+    font-size: 60px;
+    color: #68208a;
+    font-weight: 400;
+}
+
+.zoomable-packing p {
+    font-size: 20px;
+    color: #893eac;
+    
+}
+
+.zoomable-packing p span {
+    display: block;
+    font-size: 70px;
+
+}
+
+.zoomable-packing {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.packing {
+    border-radius: 15px
+
+}
+
+.trade-india {
+    padding-top: 100px;
+    padding-left: 0;
+}
+
+.export {
+    padding-top: 20px;
+    padding-left: 10px;
+    color: #8558ff
+}
+
+.import {
+    padding-left: 40px;
+    color:8558ff;
+}
+
+/* for line graph */
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+}
+
+.line-graph .container .row .col-6 {
+    position: relative;
+    left: -50px;
+    top: 50px
+}
+
+.line-graph .container .row .col-6 h1{
+    position: relative;
+    right: -150px;
+    top: 50px;
+    font-size: 60px;
+    color: #68208a;
+    font-weight: 400;
+}
+
+.lgexport {
+    position: relative;
+    /* right: -200px; */
+    top: 130px;
+    font-size: 15px;
+    color: steelblue;
+    /* padding-left: 40px; */
+}
+
+.lgimport {
+    position: relative;
+    /* right: -200px; */
+    top: 130px  ;
+    font-size: 15px;
+    color: red;
+    /* padding-left: 60px; */
+}
+
+.para-trade-dif {
+    width: 250px;
+    position: relative;
+    left: 300px;
+    color: #653cd4;
+    margin-top: 15px;
+    border-left: 3px solid #8558ff;
+    padding-left: 15px;
+}
+
+.line-graph {
+    padding-bottom: 50px;
+}
+
+/* This is for the map */
+
+.slice {
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+.slice .main-arc {
+        stroke: #fff;
+        stroke-width: 2px;
+    }
+
+.slice .hidden-arc {
+        fill: none;
+    }
+
+.slice text {
+        pointer-events: none;
+        dominant-baseline: middle;
+        text-anchor: middle;
+    }
+
+.zs-chart {
+        background-color: none;
+        margin: 0;
+        position:relative;
+        top: 160px;
+      
+    }
+
+.zs-heading {
+    font-size: 60px;
+
+    color:#68208a;
+    line-height: 75px;
+    position: relative;
+    top: 170px;
+    left: 60px
+
+}
+
+.destination {
+    color: #8558ff;
+    padding-left: 30px;
+    font-size: 80px;
+}
+
+#zoomable-sunburst {
+    position: relative;
+    top: -110px;
+    right: 230px;
+}
+
+.comodities {
+    color: #68208a;
+    font-size: 25px;
+    margin-left: 150px;
+    position: relative;
+    top: -20px;
+}
+    
+
+.footer {
+    background-color: #68208a;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+.zs {
+    margin-bottom: 90px;
+}
+
+.fas {
+    font-size: 40px;
+}

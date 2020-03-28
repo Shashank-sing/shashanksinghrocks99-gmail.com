@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <style type="text/css">
+        #india {
+            /*    fill: #00BCD4;
+      opacity: .7; */
+            stroke: #101010;
+            stroke-width: .6;
+        }
+
+        div.tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 0.5em;
+            font-size: 10px;
+            color: #222;
+            background: #FFF;
+            border-radius: 2px;
+            pointer-events: none;
+            box-shadow: 0px 0px 2px 0px #a6a6a6;
+        }
+
+        
+    </style>
+
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/f4c3f2aa37.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="nav">
+        <div class="container">
+            <a class="navbar-brand pb-2" href="#"><i class="fas fa-globe-europe"></i> Trade Inc</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link p-0" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="main-page">
+        <div id="header">
+            <div class="brand">
+                <h1 class="mb-0">
+                    Trade Inc
+                </h1>
+            </div>
+            <div class="subtext">
+                <h5>
+                    International Trade / World Interconnectivity
+                </h5>
+            </div>
+        </div>
+        <div class="image">
+            <img src="earth.svg" alt="earth" />
+        </div>
+        <div class="lorem">
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <p align="justify" id="para-1">
+                                In 2017 India imported $417B, making it the 11th largest importer in the world. During
+                                the last five years the imports of India have decreased at an annualized rate of -1.6%,
+                                from $449B in 2012 to $417B in 2017. The most recent imports are led by Crude Petroleum
+                                which represent 17.9% of the total imports of India, followed by Gold, which account for
+                                9.3%.
+                                India borders Afghanistan, Bangladesh, Bhutan, China, Burma, Nepal and Pakistan by land and Indonesia, Sri Lanka, Maldives and Thailand by sea.
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <p align="justify">
+                                India is the 17th largest export economy in the world and the 45th most complex economy
+                                according to the Economic Complexity Index (ECI). In 2017, India exported $292B and
+                                imported $417B, resulting in a negative trade balance of $125B. In 2017 the GDP of India
+                                was $2.6T and its GDP per capita was $7.06k.
+
+                                The top exports of India are Refined Petroleum ($30.2B), Diamonds ($26.5B), Packaged
+                                Medicaments ($13.2B), Jewellery ($8.66B) and Rice ($7.05B), using the 1992 revision of
+                                the HS (Harmonized System) classification.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <section class="zoomable-packing">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 trade-india">
+                    <h1>Indian Trade</h1>
+                    <p>This projects the Indian Import and Export data <span class="export">$292B Export</span> <span
+                            class="import">$418B Import</span></p>
+                </div>
+                <div class="col-6">
+                    <svg width="600" height="600" class="packing" id="packing"></svg>
+                    <!-- <js code for zoomable packing -->
+                    <script src="App.js"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="line-graph">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div id="lg"></div>
+                    <script src="line-graph.js"></script>
+                </div>
+                <div class="col-6">
+                    <h1>Trade Difference</h1>
+                    <div class="lgexport">
+                        - Export
+                    </div>
+                    <div class="lgimport">
+                        - Import
+                    </div>
+                    <p align="justify" class="para-trade-dif">As of 2017 India had a negative trade balance of $125B in
+                        net imports. As compared to their trade balance in 1995 when they had a positive trade balance
+                        of $340M in net exports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="zs">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="zs-heading">
+                        Major Export <span class="destination">Destinations</span>
+                        <section class="comodities">
+                            Handicrafts | Coffee | Ores
+                        </section>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="zs-chart">
+                        <svg id="zoomable-sunburst"></svg>
+                        <script src="zoomable-sunburst.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>© Copyright 2018 Trade Inc</p>
+    </section>
+
+</body>
+
+</html>
