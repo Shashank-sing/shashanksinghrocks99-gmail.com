@@ -1,0 +1,130 @@
+{
+    "name": "India Trade",
+    "children": [
+        {
+            "name": "Import",
+            "children": [
+                {
+                    "name": "Mineral Products",
+                    "children": [
+                        {
+                            "name": "Crude Petroleum",
+                            "size": 22.572
+                        },
+                        {
+                            "name": "Coal Briquettes",
+                            "size":5.9
+                        },
+                        {
+                            "name": "Petroleum Gas",
+                            "size":3.64
+                        },
+                        {
+                            "name": "Copper Ore",
+                            "size": 1.38
+                        },
+                        {
+                            "name": "Refined Petroleum",
+                            "size":1.128
+                        },
+                        {
+                            "name": "Coke",
+                            "size":0.77
+                        },
+                        {
+                            "name": "Others",
+                            "size": 5.517
+                        }
+                    ]
+                },
+                {
+                    "name": "Machines",
+                    "size": 83.6
+                },
+                {
+                    "name": "Precious Metals",
+                    "children": [
+                        {
+                            "name":"Gold",
+                            "size": 6.608
+                        },
+                        {
+                            "name":"Diamonds",
+                            "size": 3.48
+                        },
+                        {
+                            "name":"Pearls",
+                            "size": 0.55
+                        },
+                        {
+                            "name":"Silver",
+                            "size": 0.511
+                        },
+                        {
+                            "name":"Others",
+                            "size":0.923
+                        }
+                    ]
+                },
+                {
+                    "name": "Chemical Products",
+                    "size": 36
+                },
+                {
+                    "name": "Metals",
+                    "size": 26
+                },
+                {
+                    "name": "Plastics and Rubbers",
+                    "size": 16
+                },
+                {
+                    "name": "Animal and Vegetable Bi-Products",
+                    "size": 11.7
+                },
+                {
+                    "name": "Textiles",
+                    "size": 6.688
+                },
+                {
+                    "name": "Others",
+                    "size": 41.8
+                }
+            ]
+        },
+        {
+            "name": "Export",
+            "size": 292,
+            "children": [
+                {
+                    "name": "Chemical",
+                    "size": 40.88
+                },
+                {
+                    "name": "Precious Metals",
+                    "size": 37.94
+                },
+                {
+                    "name": "Textiles",
+                    "size": 35.04
+                },
+                {
+                    "name": "Mineral Products",
+                    "size": 35.04
+                },
+                {
+                    "name": "Metals",
+                    "size": 29.20
+                },
+                {
+                    "name": "Machines",
+                    "size": 27.15
+                },
+                {
+                    "name": "Transportation",
+                    "size": 18.68
+                }
+            ]
+        }
+    ]
+}
